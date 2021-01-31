@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS</title>
+</head>
+<body>
+    <script>
+        
+        var nome = prompt('Qual é o seu nome?');
+        var salario = Number(prompt('Qual é o seu salário?'));
+        document.write(`Olá ${nome}! </br> Seu nome tem ${nome.length} letras! </br>`);
+        document.write(`Seu nome em maiúsculo fica ${nome.toUpperCase()}!</br>`);
+        document.write(`Seu nome em minúsulo fica ${nome.toLowerCase()}!</br>`); 
+       //formatação de numeros com duas casas decimais toFixed(2):
+        document.write(`Você disse que seu salário é: ${salario.toFixed(2)}</br>`);
+        //Formatação de moeda
+        document.write(`Exibir Real: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</br>`);
+        document.write(`Exibir Dólar: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}</br>`);
+        document.write(`Exibir Euro: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}</br>`);
+        //Formatação de converter virgula para ponto
+        document.write(`Formato americano é: ${salario.toFixed(2)}</br>`).replace('.',',')
+    </script>
+</body>
+</html>

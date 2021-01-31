@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Java Script</title>
+    <style>
+    
+    body{
+        background-color: rgb(140, 140, 240);
+        color: white;
+    }        
+    
+    </style>
+
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+
+    <script>
+        //O valor retornado no prompt é sempre string, logo para somar dados number informados é necessário converte-los
+        var n1 = Number.parseInt(prompt('Digite um número:'));
+        //a utilização do apenas o Number substitui o Number.parseInt, o JS resolve o tipo.
+        var n2 = Number(prompt('Digite outro número:'));
+        var soma = n1 + n2;
+        //Podemos concatenar das seguintes formas:
+        window.alert('A soma dos valores é:' + soma);   
+        window.alert(`A soma dos valores é: ${soma}`);
+    </script>
+    
+</body>
+</html>
